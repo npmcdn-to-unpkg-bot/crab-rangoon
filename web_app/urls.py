@@ -12,6 +12,12 @@ urlpatterns = patterns('',
 
     url(r'^$', home.home),
     url(r'^contact/$', home.contact),
+    url(r'^news/$', home.news),
+    url(r'^videos/$', home.videos),
+    url(r'^tour/$', home.tour),
+    url(r'^store/$', home.store),
+
+
     url(r'^signup/$', home.signup),
     url(r'^login/$', home.login),
 

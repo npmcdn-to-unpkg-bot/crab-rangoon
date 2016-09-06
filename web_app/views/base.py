@@ -13,8 +13,8 @@ logger = logging.getLogger(__name__)
 def render(request, template, ctx=None):
     if ctx is None:
         ctx = {}
-    ctx['BODY_CLASS'] = "yup"
-    ctx['PAGE_TITLE'] = "web_app"
+    ctx['BODY_CLASS'] = "crab_rangoon"
+    ctx['PAGE_TITLE'] = "Crab Rangoon"
 
     return shortcuts.render(request, template + '.html', ctx)
 

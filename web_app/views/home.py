@@ -22,11 +22,32 @@ def home(request):
 		logger.info("User is NOT authenticated")
 		# return HttpResponse("NO MAN")
 	ctx = {}
-	ctx['PAGE_TITLE'] = 'web_app'
+	ctx['PAGE_TITLE'] = 'Crab Rangoon'
 	ctx['user'] = user
 	logger.info("User: %s" % user)
 
 	return base.render(request, 'home/home', ctx)
+
+
+def videos(request):
+	ctx = {}
+	return base.render(request, 'home/videos', ctx)
+
+
+def news(request):
+	ctx = {}
+	return base.render(request, 'home/news', ctx)
+
+
+def tour(request):
+	ctx = {}
+	return base.render(request, 'home/tour', ctx)
+
+
+def store(request):
+	ctx = {}
+	return base.render(request, 'home/store', ctx)
+
 
 
 def search(request, sample):
